@@ -33,7 +33,6 @@ const Obituary = () => {
             <span className="text-earth-300">—</span>
             <span>{obituaryData.passedDate}</span>
           </div>
-          <p className="mt-3 text-earth-500 text-lg">Age {obituaryData.age}</p>
         </motion.div>
 
         {/* Main Content Card */}

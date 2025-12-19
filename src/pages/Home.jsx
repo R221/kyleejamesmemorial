@@ -82,7 +82,9 @@ const Home = () => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 1.5, ease: 'easeInOut' }}
-                  className="w-full h-full object-cover object-[center_40%]"
+                  className={`w-full h-full object-cover ${
+                    currentImageIndex === 2 ? 'object-[center_25%]' : 'object-[center_40%]'
+                  }`}
                   style={{ imageRendering: '-webkit-optimize-contrast' }}
                 />
               </AnimatePresence>
