@@ -99,7 +99,7 @@ const Home = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
               >
-                <p className="text-2xl md:text-3xl text-purple-100/95 mb-4 font-serif italic drop-shadow-md">
+                <p className="text-2xl md:text-3xl text-purple-100/95 mb-4 font-serif italic drop-shadow-md mt-20 md:mt-0">
                   February 11, 1960 - December 17, 2025
                 </p>
                 <div className="w-24 h-1 bg-purple-200/80 mx-auto mb-8"></div>
