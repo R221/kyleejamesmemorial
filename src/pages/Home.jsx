@@ -99,10 +99,6 @@ const Home = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
               >
-                <h1 className="text-5xl md:text-7xl font-serif font-bold text-purple-100 mb-6 tracking-wide"
-                    style={{ textShadow: '0 0 30px rgba(233, 213, 255, 0.6), 0 4px 6px rgba(0, 0, 0, 0.3)' }}>
-                  Kylee Grimes James
-                </h1>
                 <p className="text-2xl md:text-3xl text-purple-100/95 mb-4 font-serif italic drop-shadow-md">
                   February 11, 1960 - December 17, 2025
                 </p>
