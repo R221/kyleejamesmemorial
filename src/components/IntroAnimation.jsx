@@ -128,7 +128,7 @@ const IntroAnimation = ({ onComplete }) => {
               transition={{ duration: 1, delay: 2.5 }}
               className="mt-2 text-lg md:text-xl text-purple-200 font-serif italic"
             >
-              January 15, 1960 - December 17, 2025
+              February 11, 1960 - December 17, 2025
             </motion.p>
           </motion.div>
         </motion.div>
