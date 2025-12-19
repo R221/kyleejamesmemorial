@@ -25,7 +25,7 @@ const WellLoved = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-center mb-16"
+          className="text-center mb-16 mt-8 md:mt-0"
         >
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-earth-800 mb-6 tracking-wide">
             Well-Loved by Friends and Family

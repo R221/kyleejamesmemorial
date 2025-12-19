@@ -104,7 +104,7 @@ const Home = () => {
                   Kylee Grimes James
                 </h1>
                 <p className="text-2xl md:text-3xl text-purple-100/95 mb-4 font-serif italic drop-shadow-md">
-                  January 15, 1960 - December 17, 2025
+                  February 11, 1960 - December 17, 2025
                 </p>
                 <div className="w-24 h-1 bg-purple-200/80 mx-auto mb-8"></div>
                 <p className="text-xl md:text-2xl text-purple-100/95 max-w-3xl mx-auto mb-12 leading-relaxed drop-shadow-md">
