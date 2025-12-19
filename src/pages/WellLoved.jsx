@@ -41,7 +41,7 @@ const WellLoved = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mb-16"
+          className="mb-24 md:mb-16"
         >
           <WordCloudHero words={wordCloudData} />
         </motion.div>
