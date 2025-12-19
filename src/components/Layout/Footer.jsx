@@ -27,7 +27,7 @@ const Footer = () => {
           {/* Footer Text */}
           <div className="text-center text-sm opacity-80">
             <p>In Loving Memory of Kylee Grimes James</p>
-            <p className="mt-1">&copy; {currentYear} - Forever in Our Hearts</p>
+            <p className="mt-1">&copy; {currentYear} - Forever in Our Hearts - by Robert James</p>
           </div>
         </div>
       </div>
