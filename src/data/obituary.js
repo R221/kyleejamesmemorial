@@ -5,7 +5,6 @@ export const obituaryData = {
   fullName: 'Kylee Grimes James',
   birthDate: 'January 15, 1960',
   passedDate: 'December 17, 2025',
-  age: 65,
 
   biography: `Kylee Grimes James lived a life full of adventure, kindness, and love. Born on January 15, 1960, she brought joy to everyone who knew her. From a young age, Kylee showed a passion for exploring the world and connecting with people from all walks of life.
 
@@ -34,16 +33,16 @@ She touched countless lives through her generosity, her laughter, and her unwave
     address: 'Hoover, AL',
   },
 
-  memorialDonations: {
-    enabled: true,
-    organizations: [
-      {
-        name: '[Charity Organization Name]',
-        description: 'In lieu of flowers, donations can be made to...',
-        link: '',
-      },
-    ],
-  },
+  // memorialDonations: {
+  //   enabled: true,
+  //   organizations: [
+  //     {
+  //       name: '[Charity Organization Name]',
+  //       description: 'In lieu of flowers, donations can be made to...',
+  //       link: '',
+  //     },
+  //   ],
+  // },
 
   favoriteQuote: '"The world is a book, and those who do not travel read only one page." - Saint Augustine',
 }
