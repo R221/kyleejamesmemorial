@@ -30,8 +30,8 @@ She touched countless lives through her generosity, her laughter, and her unwave
     type: 'Memorial Service',
     date: 'Decmber 20, 2025',
     time: '2:00 PM',
-    location: 'Faith Presbyterian Church, Hoover, AL',
-    address: '',
+    location: 'Faith Presbyterian Church',
+    address: 'Hoover, AL',
   },
 
   memorialDonations: {
