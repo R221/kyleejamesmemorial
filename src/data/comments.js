@@ -612,7 +612,6 @@ export const comments = [
 export const wordCloudData = [
   { text: 'sweet', value: 52 },
   { text: 'prayers', value: 48 },
-  { text: 'sorry', value: 46 },
   { text: 'love', value: 45 },
   { text: 'kind', value: 42 },
   { text: 'praying', value: 40 },
@@ -626,7 +625,6 @@ export const wordCloudData = [
   { text: 'loved', value: 28 },
   { text: 'heaven', value: 26 },
   { text: 'caring', value: 25 },
-  { text: 'loss', value: 24 },
   { text: 'memories', value: 24 },
   { text: 'gentle', value: 22 },
   { text: 'blessing', value: 20 },
