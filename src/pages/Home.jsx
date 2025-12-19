@@ -1,12 +1,28 @@
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import kyleeAlaska from '../assets/Kylee_alaska_store.png'
+import photo1 from '../assets/32785944_10212016041745530_2115402845049061376_n.jpg'
+import photo2 from '../assets/43005093_10212556759653295_5035811191344070656_n.jpg'
+import photo3 from '../assets/466741025_10227130535278422_6570880903633848936_n.jpg'
+import photo4 from '../assets/49239540_10213204338322357_2348113982851645440_n.jpg'
+import photo5 from '../assets/465468500_10226881332328504_8746351087101784474_n.jpg'
 import IntroAnimation from '../components/IntroAnimation'
+
+// Slideshow images for the hero section
+const heroImages = [
+  kyleeAlaska,
+  photo1,
+  photo2,
+  photo3,
+  photo4,
+  photo5,
+]
 
 const Home = () => {
   const [showIntro, setShowIntro] = useState(false)
   const [introComplete, setIntroComplete] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   useEffect(() => {
     // Check if user has already seen the intro in this session
@@ -18,6 +34,17 @@ const Home = () => {
       setIntroComplete(true)
     }
   }, [])
+
+  // Slideshow rotation effect
+  useEffect(() => {
+    if (!introComplete) return
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length)
+    }, 6000) // Change image every 6 seconds
+
+    return () => clearInterval(interval)
+  }, [introComplete])
 
   const handleIntroComplete = () => {
     setShowIntro(false)
@@ -44,14 +71,21 @@ const Home = () => {
         >
           {/* Hero Section */}
           <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-            {/* Background image with overlay */}
+            {/* Background slideshow with overlay */}
             <div className="absolute inset-0">
-              <img
-                src={kyleeAlaska}
-                alt="Kylee in Alaska"
-                className="w-full h-full object-cover object-[center_40%]"
-                style={{ imageRendering: '-webkit-optimize-contrast' }}
-              />
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={currentImageIndex}
+                  src={heroImages[currentImageIndex]}
+                  alt="Kylee"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1.5, ease: 'easeInOut' }}
+                  className="w-full h-full object-cover object-[center_40%]"
+                  style={{ imageRendering: '-webkit-optimize-contrast' }}
+                />
+              </AnimatePresence>
               {/* Overlay for text readability */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
             </div>
